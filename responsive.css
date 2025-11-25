@@ -23,4 +23,25 @@
     .hamburger-menu {
         display: block;
     }
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    .input-area button {
+        width: 100%;
+    }
+
+    .todo-list li {
+        font-size: 14px;
+    }
+
+    .delete {
+        padding: 4px 8px;
+    }
+}
 }
