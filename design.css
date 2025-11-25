@@ -17,6 +17,7 @@ nav {
     color: var(--text-color);
     position: fixed;
     top: 0;
+    border-bottom: 1px solid #ccc;
 }
 
 :root {
