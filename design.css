@@ -141,16 +141,16 @@ main{
 }
 .about-page{
    width: 100%;
-   height: 100vh;
+   height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: var(--text-color);
     border-bottom: 1px solid #ccc;
-}
-.about-section {
-    padding: 40px 20px;
+    margin: 10px 0;
+    padding: 10px 0;
+
 }
 .container {
     max-width: 900px;
@@ -182,12 +182,94 @@ main{
 }
 .contact-us-page{
    width: 100%;
-   height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   height: auto;
     color: var(--text-color);
 }
+.header {
+    background: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Form Styling */
+.contact-form {
+    margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #3f7fc7;
+}
+
+/* Contact Details */
+.contact-details h2 {
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+
+.contact-details p {
+    margin-bottom: 8px;
+}
+
 footer{
     width: 100%;
     padding: 15px 40px;
