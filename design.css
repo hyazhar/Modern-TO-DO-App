@@ -16,6 +16,9 @@ nav {
     background: var(--nav-bg);
     color: var(--text-color);
     border-bottom: 1px solid #ccc;
+    position: sticky;
+    z-index: 1000;  
+    transition: 0.5s ease-in-out;
 }
 
 :root {
@@ -59,12 +62,24 @@ nav .menus a:hover {
     font-size: 30px;
     cursor: pointer;
 }
+header {
+    width: 100%;
+    height: auto;
+    background: var(--nav-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
 .container {
     width: 400px;
     background: var(--nav-bg);
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 10px 0;
 }
 
 h2 {
@@ -124,7 +139,14 @@ h2 {
     cursor: pointer;
     font-size: 13px;
 }
-
+.complete {
+    background: green;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
 .note {
     margin-top: 15px;
     font-size: 12px;
@@ -170,6 +192,7 @@ main{
 .container p {
     margin-bottom: 20px;
     font-size: 1rem;
+    color: red;
 }
 
 .container ul {
